@@ -17,8 +17,8 @@
 
   <div class="topnav">
     <ul role="navigation">
-      <li><a class="active" href="/">Home</a></li>
-      <li><a href="#articles">Articles</a></li>
+      <li><a {% if current == "index" %} class="active" {% endif %} href="/">Home{% if current == "index" %} <span class="sr-only">(current)</span> {% endif %}</a></li>
+      <li><a {% if current == "news" %} class="active" {% endif %} href="/news">News{% if current == "news" %} <span class="sr-only">(current)</span> {% endif %}</a></li>
       <li><a href="#resources">Resources</a></li>
       <li><a href="#events">Events</a></li>
       <li><a href="#shop">Shop</a></li>
