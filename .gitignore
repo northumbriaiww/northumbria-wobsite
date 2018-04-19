@@ -3,6 +3,7 @@ env_site/include/
 env_site/local/
 env_site/iww/db.sqlite3
 env_site/iww/manage.py
+env_site/iww/static/external/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
