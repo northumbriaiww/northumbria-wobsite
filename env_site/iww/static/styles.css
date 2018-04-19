@@ -7,12 +7,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+ul {
+  list-style: none;
+  padding: none;
+  margin: none;
+}
+
 .topnav {
   overflow: hidden;
   background-color: #000000;
 }
 
-.topnav a {
+.topnav ul li a {
   float: left;
   display: block;
   color: white;
@@ -22,12 +28,12 @@ body {
   font-size: 17px;
 }
 
-.topnav a:hover {
+.topnav ul li a:hover {
   background-color: #f9f9f9;
   color: black;
 }
 
-.topnav a.active {
+.topnav ul li a.active {
   background-color: #000000;
   color: white;
 }
@@ -42,7 +48,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a, .topnav input[type=text] {
+  .topnav ul li a, .topnav input[type=text] {
     float: none;
     display: block;
     text-align: left;
