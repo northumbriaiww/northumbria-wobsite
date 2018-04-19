@@ -6,7 +6,7 @@ from django.db import models
 class NewsPost(models.Model):
     title = models.CharField(max_length=50)
     author = models.CharField(max_length=50)
-    imageUrl = models.CharField(max_length=50)
+    imageUrl = models.CharField(max_length=50, blank=True)
     content = models.CharField(max_length=256)
     publicationDate = models.DateField()
     #tells Python how to display a human-readable representation of an object
